@@ -1,0 +1,14 @@
+<div class="list">
+  <div class="list-group">
+
+         <span class="list-group-item active cat-top">
+          <em class="fa fa-fw fa-coffee text-white"></em>&nbsp;&nbsp;&nbsp;{{title}}
+          <span class="badge">{{subTitle}}</span>
+		 </span>
+    <a class="list-group-item cat-list" *ngFor="let item of list" (click)="addFilter(title, item.title)">
+      <em class="fa fa-fw {{item.icon}} text-muted"></em>&nbsp;&nbsp;&nbsp;{{item.title}}
+      <span class="badge text-red-bg">{{item.subTitle}}</span>
+    </a>
+
+  </div><!-- /.list-group -->
+</div><!-- /.list -->

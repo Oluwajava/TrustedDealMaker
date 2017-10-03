@@ -1,0 +1,289 @@
+<app-header></app-header>
+<!-- ==============================================
+Header
+=============================================== -->
+<header class="header-one">
+  <div class="container">
+    <div class="content">
+
+      <div class="row">
+        <h1 class="name revealOnScroll" data-animation="fadeInDown">Trusted Deal
+          Maker.</h1>
+        <p class="temp">The Ultimate Freelance Marketplace Template</p>
+        <h1 class="hire revealOnScroll" data-animation="fadeInUp" data-timeout="400">Hire the best freelancers
+          for your work.</h1>
+        <div class="form-row">
+          <div class="radio radio-left">
+            <a [routerLink]="['signup']">Service Buyer</a>
+          </div>
+          <div class="radio radio-right">
+            <a [routerLink]="['signup']">Service Provider</a>
+          </div><!--./radio -->
+        </div><!--./form-row -->
+      </div><!--./row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 hidden-xs">
+          <div class="logos">
+            <img src="../../../assets/img/featured-logos.png" class="img-responsive" alt=""/></div>
+          <!--./logos -->
+        </div>
+        <!--./col-lg-10 -->
+      </div><!--./row -->
+
+    </div><!--./content -->
+  </div><!--./container -->
+</header><!--./header -->
+
+
+<!-- ==============================================
+Freelance Services Section
+=============================================== -->
+<section id="services" class="services">
+  <div class="container text-center">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Browse Freelance Services</h3>
+        <hr class="mint">
+        <p class="top-p">View over 30,000 available services by category.</p>
+
+        <!--<p *ngFor="let service of _services">{{service?.title}}</p>-->
+
+        <app-card *ngFor="let service of _services" [id]="service?.id" [icon]="service?.icon" [title]="service?.title" [subtitle1]="service?.subtitle1" [subtitle2]="service?.subtitle2"></app-card>
+        <!---->
+        <!--<app-card [icon]="'fa-code'" [title]="'Web Development & IT'"-->
+                  <!--[subtitle1]="'Designer, Developer, Project Management, Front-End Developer.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-eye'" [title]="'Design, Art & Multimedia'"-->
+                  <!--[subtitle1]="'Design, Logo Design, Animation, Graphic Design, 3D, Adobe photoshop.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-pencil'" [title]="'Writing & Translation'"-->
+                  <!--[subtitle1]="'Content Writing, English Translation, Articles, SEO, Translation, Research.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-cogs'" [title]="'Admin Support'"-->
+                  <!--[subtitle1]="'Data Entry, English, Excel, Customer Service, Admin Support, Research, Email.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-table'" [title]="'Management & Finance'"-->
+                  <!--[subtitle1]="'Finance, Accounting, Tax Service, Payroll Manager, Book Keeper, Human Resource.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-bullhorn'" [title]="'Sales & Marketing'"-->
+                  <!--[subtitle1]="'Sales, Marketing, Lead Generation, Market Research, Leads.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-wrench'" [title]="'Engineering & Architecture'"-->
+                  <!--[subtitle1]="'Design, Architect, 3D, CAD, Engineering, Matlab, Electrical, Software.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+        <!--<app-card [icon]="'fa-legal'" [title]="'Legal'"-->
+                  <!--[subtitle1]="'Legal, Paralegal, Contracts, Drafting, Legal Advice, Patents, Federal Law.'"-->
+                  <!--[subtitle2]="'Over 2,000 services'"></app-card>-->
+      </div>
+
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+</section><!-- /section -->
+
+<!-- ==============================================
+Banner Section
+=============================================== -->
+<section class="banner-comment">
+  <div class="container">
+    <h1>Best way to help world society is to develop a concrete framework for high paying jobs and individual skills
+      enhancements.</h1>
+  </div><!-- /container -->
+</section><!-- /section -->
+
+<!-- ==============================================
+Stats Section
+=============================================== -->
+<section id="stats" class="stats">
+  <div class="container text-center">
+
+    <div class="row">
+
+      <div class="col-lg-3 col-sm-6 pro">
+        <h5>Clients</h5>
+        <h1><span class="number-animator" data-value="505" data-animation-duration="800">0</span></h1>
+        <div class="progress transparent progress-small no-radius">
+          <div class="progress-bar progress-bar-black animated-progress-bar" data-percentage="45%"></div>
+        </div><!-- /.progress -->
+      </div><!-- /.col-lg-3 -->
+
+      <div class="col-lg-3 col-sm-6 pro">
+        <h5>Freelancers</h5>
+        <h1><span class="number-animator" data-value="4500" data-animation-duration="800">0</span></h1>
+        <div class="progress transparent progress-small no-radius">
+          <div class="progress-bar progress-bar-black animated-progress-bar " data-percentage="79%"></div>
+        </div><!-- /.progress -->
+      </div><!-- /.col-lg-3 -->
+
+      <div class="col-lg-3 col-sm-6 pro">
+        <h5>Jobs Completed</h5>
+        <h1><span class="number-animator" data-value="14000" data-animation-duration="800">0</span></h1>
+        <div class="progress transparent progress-small no-radius">
+          <div class="progress-bar progress-bar-black animated-progress-bar" data-percentage="85%"></div>
+        </div><!-- /.progress -->
+      </div><!-- /.col-lg-3 -->
+
+      <div class="col-lg-3 col-sm-6 pro">
+        <h5>Payed To Freelancers</h5>
+        <h1><i class="fa fa-usd"></i><span class="number-animator" data-value="500K"
+                                           data-animation-duration="800">0</span></h1>
+        <div class="progress transparent progress-small no-radius">
+          <div class="progress-bar progress-bar-black animated-progress-bar" data-percentage="85%"></div>
+        </div><!-- /.progress -->
+      </div><!-- /.col-lg-3 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /section -->
+
+<!-- ==============================================
+Testimonials Section
+=============================================== -->
+<div id="testimonials">
+  <div class="container">
+    <div class="row">
+
+      <h3>Testimonials</h3>
+      <hr class="mint">
+
+      <div class="testimonials-slider">
+        <ul class="slides">
+          <li>
+            <p>The Kafe Template, is a powerful medium of expression and design in which its communications
+              offers an infinite variety of perception, interpretation and execution.
+              <span>John Doe</span></p>
+          </li>
+          <li>
+            <p>I m wondering why I never contacted these guys sooner! Seriously, they all have commendable
+              talent in their respective field and knocked my concept out of the ballpark. Thanks for an
+              amazing experience!
+              <span>Segero, NoranicMeds</span></p>
+          </li>
+          <li>
+            <p>I m wondering why I never contacted these guys sooner! Seriously, they all have commendable
+              talent in their respective field and knocked my concept out of the ballpark. Thanks for an
+              amazing experience!
+              <span>Jane Doe</span></p>
+          </li>
+        </ul><!-- /ul -->
+      </div><!-- /.testimonials-slider -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+<!-- /section -->
+
+<!-- ==============================================
+Footer Section
+=============================================== -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 text-left">
+        <h4 class="heading no-margin">About Us</h4>
+        <hr class="mint">
+        <p>The Kafe. Template is the Ultimate Freelance Marketplace Template for employers and freelancers to
+          connect, collaborate, and get work done.</p>
+        <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with
+          great focus on user experience and customer service.</p>
+      </div><!-- /.col-md-4 -->
+
+      <div class="col-md-2 col-sm-6 text-left">
+        <h4 class="heading no-margin">Company</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="services.html">Freelancers</a>
+          <a href="how-1.html">How it works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div><!-- /.col-md-2 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Other Services</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Browse</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="services.html">Top Freelancers this Month of June</a>
+          <a href="services.html">Top Freelancers by Skill</a>
+          <a href="services.html">Top Freelancers in USA</a>
+          <a href="services.html">Top Freelancers in UK</a>
+          <a href="services.html">Top Freelancers in Australia</a>
+          <a href="services.html">Top Freelancers in Kenya</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+    </div><!-- /.row -->
+    <div class="clearfix"></div>
+  </div><!-- /.container-->
+</div><!-- /.footer -->
+
+<!-- ==============================================
+Made Section
+=============================================== -->
+<section class="made">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4 class="made-with-love">Trusted Deal Maker.</h4>
+        <!--<p class="made-with-love-1">Handcrafted with <i class="fa fa-heart"></i> &amp; Much <i class="fa fa-coffee"></i> In Nairobi, Kenya.</p>-->
+      </div>
+      <!-- /.col-lg-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.made -->
+
+<!-- ==============================================
+Bottom Footer Section
+=============================================== -->
+<footer id="main-footer" class="main-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-links">
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i
+            class="fa fa-facebook fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i
+            class="fa fa-twitter fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i
+            class="fa fa-google-plus fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i
+            class="fa fa-pinterest fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i
+            class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn"
+           data-timeout="200">
+        <div class="img-responsive text-center">
+          <i class="fa fa-coffee logo"></i></div><!-- End image-->
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight"
+           data-timeout="200">
+        <p>&copy;2016 Trusted Deal Maker</p>
+      </div>
+      <!-- /.col-sm-4 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</footer><!-- /.footer -->
+
+<a id="scrollup">Scroll</a>

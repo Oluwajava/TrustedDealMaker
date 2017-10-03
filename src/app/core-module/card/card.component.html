@@ -1,0 +1,15 @@
+<div class="col-lg-4 col-md-4 col-sm-6">
+  <a [routerLink]="['/services']" [queryParams]="{category:id}" class="hover">
+    <div class="features one">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa {{icon}} fa-stack-1x fa-inverse"></i>
+			</span><!-- /span -->
+      <h4>{{title}}</h4>
+    </div><!-- /.features -->
+    <div class="spacer">
+      <p>{{subtitle1}}</p>
+      <p><b>{{subtitle2}}</b></p>
+    </div> <!-- /.spacer -->
+  </a>
+</div><!-- /.col-lg-4 -->

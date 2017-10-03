@@ -1,0 +1,175 @@
+<app-header></app-header>
+
+<!-- ==============================================
+Header
+=============================================== -->
+<header class="header-login">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <h1 class="revealOnScroll" data-animation="fadeInDown"><i class="fa fa-coffee"></i> Login</h1>
+        <p>Log in and get to work.</p>
+      </div><!-- /.row -->
+    </div><!-- /.content -->
+  </div><!-- /.container -->
+</header><!-- /header -->
+
+<!-- ==============================================
+Banner Login Section
+=============================================== -->
+<section class="banner-login">
+  <div class="container">
+    <div class="row">
+
+      <main class="main main-signup col-lg-12">
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+          <div class="form-sign">
+            <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+              <div class="form-head">
+                <h3>Login</h3>
+              </div><!-- /.form-head -->
+              <div class="form-body">
+
+                <div class="form-row">
+                  <div class="form-controls">
+                    <input name="username" placeholder="Username" class="field" type="text" formControlName="username" email>
+                  </div><!-- /.form-controls -->
+                </div><!-- /.form-row -->
+
+                <div class="form-row">
+                  <div class="form-controls">
+                    <input name="password" placeholder="Password" class="field" type="password" formControlName="password">
+                  </div><!-- /.form-controls -->
+                </div><!-- /.form-row -->
+              </div><!-- /.form-body -->
+
+              <div class="form-foot">
+                <div class="form-actions">
+                  <input value="Login" class="form-btn" type="submit">
+                </div><!-- /.form-actions -->
+                <div class="form-head">
+                  <a href="#" class="more-link">Forgot Password?</a>
+                </div>
+              </div><!-- /.form-foot -->
+            </form>
+
+          </div><!-- /.form-sign -->
+        </div><!-- /.col-lg-6 -->
+      </main>
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /section -->
+
+<!-- ==============================================
+Footer Section
+=============================================== -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 text-left">
+        <h4 class="heading no-margin">About Us</h4>
+        <hr class="mint">
+        <p>Trusted Deal Maker.</p>
+        <p>We work connect the best service providers to best service user.</p>
+      </div><!-- /.col-md-4 -->
+
+      <div class="col-md-2 col-sm-6 text-left">
+        <h4 class="heading no-margin">Company</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="services.html">Freelancers</a>
+          <a href="how-1.html">How it works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div><!-- /.col-md-2 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Other Services</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Browse</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="services.html">Top Freelancers this Month of June</a>
+          <a href="services.html">Top Freelancers by Skill</a>
+          <a href="services.html">Top Freelancers in USA</a>
+          <a href="services.html">Top Freelancers in UK</a>
+          <a href="services.html">Top Freelancers in Australia</a>
+          <a href="services.html">Top Freelancers in Kenya</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+    </div><!-- /.row -->
+    <div class="clearfix"></div>
+  </div><!-- /.container-->
+</div><!-- /.footer -->
+
+<!-- ==============================================
+Made Section
+=============================================== -->
+<section class="made">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4 class="made-with-love">Trusted Deal Maker</h4>
+        <!--<p class="made-with-love-1">Handcrafted with <i class="fa fa-heart"></i> &amp; Much <i-->
+        <!--class="fa fa-coffee"></i> In Nairobi, Kenya.</p>-->
+      </div>
+      <!-- /.col-lg-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.made -->
+
+<!-- ==============================================
+Bottom Footer Section
+=============================================== -->
+<footer id="main-footer" class="main-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-links">
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i
+            class="fa fa-facebook fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i
+            class="fa fa-twitter fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i
+            class="fa fa-google-plus fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i
+            class="fa fa-pinterest fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i
+            class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn"
+           data-timeout="200">
+        <div class="img-responsive text-center">
+          <i class="fa fa-coffee logo"></i></div><!-- End image-->
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight"
+           data-timeout="200">
+        <p>&copy;2016 Trusted Deal Makers</p>
+      </div>
+      <!-- /.col-sm-4 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</footer><!-- /.footer -->
+
+<a id="scrollup">Scroll</a>

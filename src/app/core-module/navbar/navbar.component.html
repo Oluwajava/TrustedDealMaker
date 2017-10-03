@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid margin-20">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <img src="../../../assets/img/logo.png" [routerLink]="['/']">
+    <input type="checkbox" id="toggle"/>
+    <label for="toggle" class="toggle"></label>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <ul class="menu">
+      <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b-->
+        <!--class="caret"></b></a>-->
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a [routerLink]="['/']">Home #1</a></li>-->
+          <!--&lt;!&ndash;<li><a href="index-2.html">Home #2</a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="index-3.html">Home #3</a></li>&ndash;&gt;-->
+        <!--</ul>-->
+      <!--</li>-->
+
+      <li><a [routerLink]="['/login']" *ngIf="!authService.isLoggedIn()">Login</a></li>
+      <li><a *ngIf="authService.isLoggedIn()">Logout</a></li>
+
+      <!--<li><a href="about.html">About</a></li>-->
+      <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Jobs <b-->
+        <!--class="caret"></b></a>-->
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a [routerLink]="['/jobs']">Jobs</a></li>-->
+          <!--<li><a [routerLink]="['./job']">Job Post</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+      <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Freelancers <b-->
+        <!--class="caret"></b></a>-->
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a [routerLink]="['/services']">Services</a></li>-->
+          <!--<li><a [routerLink]="['/service']">Service Page</a></li>-->
+          <!--<li><a [routerLink]="['/portfolio']">Freelancer Profile</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+      <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">How it works <b-->
+        <!--class="caret"></b></a>-->
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a href="how-1.html">How #1</a></li>-->
+          <!--<li><a href="how-2.html">How #2</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+      <!--<li><a href="login.html">Login</a></li>-->
+      <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Register <b-->
+        <!--class="caret"></b></a>-->
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a href="signup.html">Sign Up</a></li>-->
+          <!--<li><a href="register.html">Register</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+      <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>-->
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a href="contact.html">Contact</a></li>-->
+          <!--<li><a href="blog.html">Blog</a></li>-->
+          <!--<li><a href="blogpage.html">Blog Page</a></li>-->
+          <!--<li><a href="faq.html">FAQ</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+    </ul><!-- /.ul.menu -->
+  </div><!-- /.container -->
+</nav><!-- /.nav -->

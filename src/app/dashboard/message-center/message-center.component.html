@@ -1,0 +1,202 @@
+<app-header></app-header>
+
+
+<!-- ==============================================
+Hello Section
+=======================
+======================== -->
+
+
+<section class="hello" id="hello">
+  <section class="section-class">
+    <div class="container ">
+      <div class="row bottom-border">
+        <div class="col-sm-12 animated fadeInRightBig message-center-title">
+          <h4 class="text-sky pull-left ">Message Center</h4>
+          <div class="pull-right"><h4><a>Switch to <span class="text-orange">BUYER</span></a></h4></div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 border1" id="inbox_html">
+        <h4 class="border-gray profile-hd3">Inbox
+          <div class="form-group  pull-right icheck-box">
+            <label class="">
+              <div class="icheckbox_flat-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+                <input type="checkbox" class="flat-red" id="unread_msg" value="1"
+                       style="position: absolute; opacity: 0;">
+                <ins class="iCheck-helper"
+                     style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+              </div>
+              Unread
+            </label>
+          </div>
+        </h4>
+        <strong>No Data</strong>
+      </div>
+
+      <div class="col-sm-offset-1 col-sm-7 border1">
+        <h4 class="border-gray profile-hd3">
+          <div class="pull-right">Service Name: <span id="service_name">Services</span></div>
+        </h4>
+        <div class="message_send_list responsive_table_container2 chat-block list-massages mCustomScrollbar _mCS_1"
+             id="loadmessages" style="height: 300px; overflow: hidden;">
+          <div class="mCustomScrollBox mCS-light" id="mCSB_1"
+               style="position: relative; height: 100%; overflow: hidden; max-width: 100%; max-height: 400px;">
+            <div class="mCSB_container mCS_no_scrollbar" style="position:relative; top:0;">
+              <strong>No Conversation Selected</strong><br>
+              Select a conversation from the left to view messages.
+            </div>
+            <div class="mCSB_scrollTools" style="position: absolute; display: none;">
+              <div class="mCSB_draggerContainer">
+                <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
+                  <div class="mCSB_dragger_bar" style="position:relative;"></div>
+                </div>
+                <div class="mCSB_draggerRail"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="write-box text-center">
+          <div class="reply_box">
+            <form method="post" action="" id="reply_form" name="reply_form">
+              <textarea name="reply_message" id="reply_message" class="reply_textarea form-control" rows="2" cols="15"
+                        required="" placeholder="Write Comment..." disabled="disabled"></textarea>
+
+              <div class="reply_actions">
+                <input type="hidden" name="receiver_id" id="receiver_id">
+                <input type="hidden" name="product_id" id="product_id">
+                <span id="button_holder">
+				<button name="reply" class="btn fill-gry-btn margin-top-bot reply_button ladda-button" id="reply_button"
+                type="submit" data-style="slide-down" disabled="disabled"><span class="ladda-label">Reply</span><span
+          class="ladda-spinner"></span></button>
+				</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End section-->
+
+<!-- ==============================================
+Footer Section
+=============================================== -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 text-left">
+        <h4 class="heading no-margin">About Us</h4>
+        <hr class="mint">
+        <p>The Kafe. Template is the Ultimate Freelance Marketplace Template for employers and freelancers to
+          connect, collaborate, and get work done.</p>
+        <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with
+          great focus on user experience and customer service.</p>
+      </div><!-- /.col-md-4 -->
+
+      <div class="col-md-2 col-sm-6 text-left">
+        <h4 class="heading no-margin">Company</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="services.html">Freelancers</a>
+          <a href="how-1.html">How it works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div><!-- /.col-md-2 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Other Services</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Browse</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="services.html">Top Freelancers this Month of June</a>
+          <a href="services.html">Top Freelancers by Skill</a>
+          <a href="services.html">Top Freelancers in USA</a>
+          <a href="services.html">Top Freelancers in UK</a>
+          <a href="services.html">Top Freelancers in Australia</a>
+          <a href="services.html">Top Freelancers in Kenya</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+    </div><!-- /.row -->
+    <div class="clearfix"></div>
+  </div><!-- /.container-->
+</div><!-- /.footer -->
+
+<!-- ==============================================
+Made Section
+=============================================== -->
+<section class="made">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4 class="made-with-love">The Kafe. Template</h4>
+        <p class="made-with-love-1">Handcrafted with <i class="fa fa-heart"></i> &amp; Much <i
+          class="fa fa-coffee"></i> In Nairobi, Kenya.</p>
+      </div>
+      <!-- /.col-lg-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.made -->
+
+<!-- ==============================================
+Bottom Footer Section
+=============================================== -->
+<footer id="main-footer" class="main-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-links">
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i
+            class="fa fa-facebook fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i
+            class="fa fa-twitter fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i
+            class="fa fa-google-plus fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i
+            class="fa fa-pinterest fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i
+            class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn"
+           data-timeout="200">
+        <div class="img-responsive text-center">
+          <i class="fa fa-coffee logo"></i></div><!-- End image-->
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight"
+           data-timeout="200">
+        <p>&copy;2016 Trusted Deal Makers</p>
+      </div>
+      <!-- /.col-sm-4 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</footer><!-- /.footer -->
+
+<a id="scrollup">Scroll</a>

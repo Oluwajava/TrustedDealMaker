@@ -1,0 +1,275 @@
+<app-header></app-header>
+
+
+<!-- ==============================================
+Hello Section
+=============================================== -->
+
+<section class="hello" id="hello">
+  <div class="container">
+    <div class="tab-content_nrmal ">
+      <div id="home" class="">
+        <div class="row">
+
+
+          <a class="btn btn-warning hidden" onclick="advancedSearch();">Advanced Search</a>
+
+
+          <div id="profile">
+            <br>
+            <div class="col-sm-3">
+              <div class="control-label">
+                <label> Service Provider Name: </label>
+              </div>
+              <select name="service_provider" id="service_provider" class="form-control">
+                <option value="*" selected="selected">---Select---</option>
+
+                <option value="1">Mayokun</option>
+
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <div class="control-label">
+                <label> Categories: </label>
+              </div>
+              <select name="filter_category" id="filter_category" class="form-control">
+                <option value="*" selected="selected">---Select---</option>
+
+                <option value="1">Agriculture</option>
+
+
+                <option value="2">Apparel</option>
+
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <div class="control-label">
+                <label> Expereince: </label>
+              </div>
+              <select name="filter_exp" id="filter_exp" class="form-control">
+                <option value="*" selected="selected">---Select---</option>
+
+
+                <option value="1">1</option>
+
+
+                <option value="2">2</option>
+
+
+                <option value="3">3</option>
+
+
+                <option value="4">4</option>
+
+
+                <option value="5">5</option>
+
+
+                <option value="6">6</option>
+
+
+                <option value="7">7</option>
+
+
+                <option value="8">8</option>
+
+
+                <option value="9">9</option>
+
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <div class="control-label">
+                <label> Certificate: </label>
+              </div>
+              <select name="filter_certi" id="filter_certi" class="form-control">
+                <option value="*" selected="selected">---Select---</option>
+
+                <option value="1">1</option>
+
+                <option value="2">2</option>
+
+                <option value="3">3</option>
+
+                <option value="4">4</option>
+
+                <option value="5">5</option>
+
+                <option value="6">6</option>
+
+                <option value="7">7</option>
+
+                <option value="8">8</option>
+
+                <option value="9">9</option>
+
+              </select>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <div class="row">
+
+          <div class="col-sm-9 style=">
+            <div class="control-label">
+              <label> Preferred location of SP : </label>
+            </div>
+            <div class="controls">
+              <table class="table" id="table2">
+                <tbody>
+                <tr>
+                  <td><select name="country[2][]" class="form-control ui-dropdown ui-dropdown-system span12">
+                    <option value="" selected="selected">-Select-Country</option>
+                    <option value="1">NIGERIA</option>
+                  </select></td>
+                  <td><select name="state[2][]" class="form-control ui-dropdown ui-dropdown-system span12">
+                    <option value="" selected="selected">-Select-State</option>
+                    <option data="248" value="4032" style="display:none;">LAGOS</option>
+                  </select></td>
+                  <td><input name="city[2][]" type="text" value="" placeholder="Enter City Name"
+                             class="span12 form-control"></td>
+                  <td width="50"><img class="add" style="width:15px; cursor:pointer;"
+                                      src="https://trusteddealmaker.com/img/1.png"> <img class="remove"
+                                                                                         style="width:15px; cursor:pointer; display:none;"
+                                                                                         src="https://trusteddealmaker.com/img/2.png">
+                  </td>
+
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <a onclick="filter();" class="btn btn-success" (click)="searchData = true">Search</a>
+            <a onclick="hide_adv();" class="btn  btn-danger" (click)="searchData = false">Close</a>
+          </div>
+        </div>
+        <br>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="container margin" *ngIf="searchData === true">
+    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+  </div>
+</section><!-- End section-->
+
+<!-- ==============================================
+Footer Section
+=============================================== -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 text-left">
+        <h4 class="heading no-margin">About Us</h4>
+        <hr class="mint">
+        <p>The Kafe. Template is the Ultimate Freelance Marketplace Template for employers and freelancers to
+          connect, collaborate, and get work done.</p>
+        <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with
+          great focus on user experience and customer service.</p>
+      </div><!-- /.col-md-4 -->
+
+      <div class="col-md-2 col-sm-6 text-left">
+        <h4 class="heading no-margin">Company</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="services.html">Freelancers</a>
+          <a href="how-1.html">How it works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div><!-- /.col-md-2 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Other Services</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+      <div class="col-md-3 col-sm-6 text-left">
+        <h4 class="heading no-margin">Browse</h4>
+        <hr class="mint">
+        <div class="no-padding">
+          <a href="services.html">Top Freelancers this Month of June</a>
+          <a href="services.html">Top Freelancers by Skill</a>
+          <a href="services.html">Top Freelancers in USA</a>
+          <a href="services.html">Top Freelancers in UK</a>
+          <a href="services.html">Top Freelancers in Australia</a>
+          <a href="services.html">Top Freelancers in Kenya</a>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+    </div><!-- /.row -->
+    <div class="clearfix"></div>
+  </div><!-- /.container-->
+</div><!-- /.footer -->
+
+<!-- ==============================================
+Made Section
+=============================================== -->
+<section class="made">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4 class="made-with-love">The Kafe. Template</h4>
+        <p class="made-with-love-1">Handcrafted with <i class="fa fa-heart"></i> &amp; Much <i
+          class="fa fa-coffee"></i> In Nairobi, Kenya.</p>
+      </div>
+      <!-- /.col-lg-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.made -->
+
+<!-- ==============================================
+Bottom Footer Section
+=============================================== -->
+<footer id="main-footer" class="main-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-links">
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i
+            class="fa fa-facebook fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i
+            class="fa fa-twitter fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i
+            class="fa fa-google-plus fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i
+            class="fa fa-pinterest fa-fw"></i></a></li>
+          <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i
+            class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn"
+           data-timeout="200">
+        <div class="img-responsive text-center">
+          <i class="fa fa-coffee logo"></i></div><!-- End image-->
+      </div>
+      <!-- /.col-sm-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight"
+           data-timeout="200">
+        <p>&copy;2016 Trusted Deal Makers</p>
+      </div>
+      <!-- /.col-sm-4 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</footer><!-- /.footer -->
+
+<a id="scrollup">Scroll</a>

@@ -1,0 +1,27 @@
+:host ::ng-deep nav.navbar {
+  background-color: #2c3e50;
+  border: 0;
+}
+
+.hello{
+  margin-top: 20vh;
+}
+
+table > thead  {
+  background: #2C3E50;
+  color: #fff;
+}
+
+td {
+  padding: 20px;
+}
+
+.message-center-title {
+  border-bottom: 1px solid #bdc3c7;
+}
+
+:host ::ng-deep table tr th,:host ::ng-deep table tr td  {
+  font-size: 1.875em !important;
+  margin: 0;
+  padding: .5em 1em;
+}
