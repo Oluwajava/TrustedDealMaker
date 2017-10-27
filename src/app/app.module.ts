@@ -58,7 +58,6 @@ import {DataTablesModule} from "angular-datatables";
     ReactiveFormsModule,
     DashboardModule,
     Ng2SmartTableModule,
-    FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
     NguiDatetimePickerModule,
 
 
