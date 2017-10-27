@@ -18,19 +18,25 @@ import {BidWonComponent} from "./bid-won/bid-won.component";
 import {OfferAcceptedComponent} from "./offer-accepted/offer-accepted.component";
 import {FroalaEditorModule, FroalaViewModule} from "angular-froala-wysiwyg";
 import {NguiDatetimePickerModule} from "@ngui/datetime-picker";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {DashboardRoutingModule} from "./dashboard-routing.module";
+import {DataTablesModule} from "angular-datatables";
+import { ServiceDetailComponent } from './service-detail/service-detail.component';
 
 const COMPONENTS = [ServiceBuyerComponent, ProfileComponent, MembershipPlanComponent, PostServiceComponent, MessageCenterComponent,
   PastWorkComponent, ServicePostedComponent, TrustedAccountComponent, IntegratedProjectComponent, RFIReceivedComponent, RFIPostedComponent,
-  ActiveBidsComponent, BidWonComponent, OfferAcceptedComponent]
+  ActiveBidsComponent, BidWonComponent, OfferAcceptedComponent, DashboardComponent, ServiceDetailComponent]
 @NgModule({
   imports: [
     CommonModule,
     CoreModule,
     Ng2SmartTableModule,
     FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
-    NguiDatetimePickerModule
+    NguiDatetimePickerModule,
+    DashboardRoutingModule,
+    DataTablesModule
   ],
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, ],
   exports: [...COMPONENTS]
 })
 export class DashboardModule {

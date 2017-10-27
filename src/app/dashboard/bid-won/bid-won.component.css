@@ -21,7 +21,7 @@ td {
 }
 
 :host ::ng-deep table tr th,:host ::ng-deep table tr td  {
-  font-size: 1.875em !important;
+  font-size: 1.2em !important;
   margin: 0;
   padding: .5em 1em;
 }

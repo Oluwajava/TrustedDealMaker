@@ -1,34 +1,37 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid margin-20">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <img src="../../../assets/img/logo.png">
+    <img src="../../../assets/img/logo.png" [routerLink]="['/']">
     <input type="checkbox" id="toggle"/>
     <label for="toggle" class="toggle"></label>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <ul class="menu">
+    <ul class="menu" *ngIf="authService.isLoggedIn() === false">
+      <li><a [routerLink]="['login']">Login</a></li>
+    </ul>
+    <ul class="menu" *ngIf="authService.isLoggedIn()">
       <li><a [routerLink]="['/message-center']"><i class="fa fa-envelope"></i><span id="message_count" class="badge" style="margin-top:-20px; display:absolute; background-color:#E87E04">3</span></a></li>
       <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Provider <b
         class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a [routerLink]="['/post-service']">Post Service Offerings</a></li>
-          <li><a [routerLink]="['/service-posted']">My Offerings</a></li>
-          <li><a [routerLink]="['/active_bids']">My Bids</a></li>
-          <li><a [routerLink]="['/bid_won']">Bid Won</a></li>
-          <li><a [routerLink]="['/offer_accepted']">Offer Accepted</a></li>
-          <li><a [routerLink]="['/past-work']">Past Contract</a></li>
-          <li><a href="freelancer.html">Cancelled Contracts</a></li>
+          <li><a [routerLink]="['/post-service']" [queryParams]="{q:true}">Post Service Offerings</a></li>
+          <li><a [routerLink]="['/service-posted']" [queryParams]="{q:true}">My Offerings</a></li>
+          <li><a [routerLink]="['/active_bids']" [queryParams]="{q:true}">My Bids</a></li>
+          <li><a [routerLink]="['/bid_won']" [queryParams]="{q:true}">Bid Won</a></li>
+          <li><a [routerLink]="['/offer_accepted']" [queryParams]="{q:true}">Offer Accepted</a></li>
+          <li><a [routerLink]="['/past-work']" [queryParams]="{q:true}">Past Contract</a></li>
+          <li><a>Cancelled Contracts</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Buyer <b
         class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a>Post Service Request</a></li>
-          <li><a>My Requests</a></li>
-          <li><a>My Offers</a></li>
-          <li><a>Bid Awarded</a></li>
-          <li><a>Offer Awarded</a></li>
-          <li><a>Past Contract</a></li>
+          <li><a [routerLink]="['/post-service']" [queryParams]="{q:false}">Post Service Request</a></li>
+          <li><a [routerLink]="['/service-posted']" [queryParams]="{q:false}">My Requests</a></li>
+          <li><a [routerLink]="['/active_bids']" [queryParams]="{q:false}">My Offers</a></li>
+          <li><a [routerLink]="['/bid_won']" [queryParams]="{q:false}">Bid Awarded</a></li>
+          <li><a [routerLink]="['/offer_accepted']" [queryParams]="{q:false}">Offer Awarded</a></li>
+          <li><a [routerLink]="['/past-work']" [queryParams]="{q:false}">Past Contract</a></li>
           <li><a>Cancelled Contracts</a></li>
         </ul>
       </li>
@@ -47,10 +50,9 @@
           <li><a [routerLink]="['/membership-plan']">Upgrade Membership</a></li>
           <li><a [routerLink]="['/trusted-account']">Trusted Key</a></li>
           <li><a [routerLink]="['/integrated-project']">Integrated Services</a></li>
-          <li><a>Logout</a></li>
+          <li><a (click)="logout()">Logout</a></li>
         </ul>
       </li>
-      <li *ngIf="authService.isLoggedIn() === false"><a href="login.html">Login</a></li>
 
     </ul><!-- /.ul.menu -->
   </div><!-- /.container -->

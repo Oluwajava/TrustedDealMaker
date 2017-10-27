@@ -34,10 +34,13 @@ import {RFIReceivedComponent} from "./dashboard/rfireceived/rfireceived.componen
 import {ActiveBidsComponent} from "./dashboard/active-bids/active-bids.component";
 import {BidWonComponent} from "./dashboard/bid-won/bid-won.component";
 import {OfferAcceptedComponent} from "./dashboard/offer-accepted/offer-accepted.component";
+import {DashboardComponent} from "./dashboard/dashboard/dashboard.component";
+import {ServiceDetailComponent} from "./dashboard/service-detail/service-detail.component";
 
 const routes: Routes = [
   {path: "", component: HomePageComponent},
   {path: "about", component: AboutPageComponent},
+  {path: "dashboard", component: DashboardComponent, canActivate: [AuthGuard]},
   {
     path: "blog", component: BlogPageComponent,
     children: [
@@ -59,6 +62,7 @@ const routes: Routes = [
   {path: "service", component: ServicePageComponent, canActivate: [AuthGuard]},
   {path: "signup", component: SignupPageComponent},
   {path: "service-buyer", component: ServiceBuyerComponent},
+  {path: "service-detail", component: ServiceDetailComponent},
   {path: "profile", component: ProfileComponent},
   {path: "membership-plan", component: MembershipPlanComponent},
   {path: "post-service", component: PostServiceComponent},

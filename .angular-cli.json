@@ -22,11 +22,22 @@
         "styles.css",
         "../node_modules/froala-editor/css/froala_editor.pkgd.min.css",
         "../node_modules/froala-editor/css/froala_style.min.css",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/datatables.net-dt/css/jquery.dataTables.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+        "assets/js/jQuery-2.1.4.min.js",
+        "assets/js/bootstrap.min.js",
+        "assets/js/jquery.animateNumbers.js",
+        "assets/js/jquery.flexslider-min.js",
+        "assets/js/jquery.appear.js",
+        "assets/js/modernizr-custom.js",
+        "assets/js/waypoints.min.js",
+        "assets/js/kafe.flexslider.js",
+        "assets/js/kafe.js",
+        "../node_modules/froala-editor/js/froala_editor.pkgd.min.js",
+        "../node_modules/datatables.net/js/jquery.dataTables.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -16,8 +16,31 @@ Hello Section
     </div>
 
   </section>
-  <div class="container margin">
-    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+  <div class="container ">
+    <table datatable class="row-border hover margin">
+      <thead>
+      <tr *ngIf="isServiceBuyer == 'true'">
+        <th>Date Posted</th>
+        <th>Services</th>
+        <th>Offers</th>
+        <th>Budget</th>
+      </tr><tr *ngIf="isServiceBuyer == 'false'">
+        <th>Date Posted</th>
+        <th>Requested Services</th>
+        <th>Bids</th>
+        <th>Budget</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let d of data">
+        <td>{{d.date}}</td>
+        <td>{{d.service}}</td>
+        <td>{{d.offer}}</td>
+        <td>{{d.budget}}</td>
+      </tr>
+
+      </tbody>
+    </table>
   </div>
 
 </section><!-- End section-->

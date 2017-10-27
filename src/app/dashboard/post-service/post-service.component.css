@@ -19,3 +19,29 @@ td {
 .margin {
   margin: 20px;
 }
+
+
+.hd-border-sky {
+  border-bottom: 3px solid #047ac4;
+  padding-left: 0px;
+  /*margin: 15px;*/
+}
+
+.post-hd-sky {
+  background: #047ac4;
+  color: #fff;
+  padding: 10px 30px;
+  margin-bottom: 0px;
+}
+
+.post-hd-orange {
+  background: #eb8306;
+  color: #fff;
+  padding: 10px 30px;
+  margin-bottom: 0px;
+}
+
+.hd-border-orange {
+  border-bottom: 3px solid #eb8306;
+  padding-left: 0px;
+}

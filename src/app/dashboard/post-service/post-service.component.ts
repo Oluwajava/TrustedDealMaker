@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostServiceComponent implements OnInit {
 
+  isPostServiceRequest = true;
+
   constructor() { }
 
   ngOnInit() {

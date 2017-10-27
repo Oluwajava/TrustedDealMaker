@@ -27,6 +27,7 @@ import { MembershipComponent } from "./dashboard/membership/membership.component
 import {Ng2SmartTableModule} from "ng2-smart-table";
 import { FroalaEditorModule, FroalaViewModule } from "angular-froala-wysiwyg";
 import {NguiDatetimePickerModule} from "@ngui/datetime-picker";
+import {DataTablesModule} from "angular-datatables";
 
 @NgModule({
   declarations: [
@@ -58,7 +59,9 @@ import {NguiDatetimePickerModule} from "@ngui/datetime-picker";
     DashboardModule,
     Ng2SmartTableModule,
     FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
-    NguiDatetimePickerModule
+    NguiDatetimePickerModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

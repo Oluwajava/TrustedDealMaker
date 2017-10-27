@@ -7,6 +7,19 @@ Hello Section
 
 <section class="hello" id="hello">
   <div class="container">
+    <div class="row ">
+      <div class="col-sm-12 hd-border-sky animated fadeInRightBig" *ngIf="isPostServiceRequest">
+        <h4 class="text-sky pull-left post-hd-sky">Post Service Offering </h4>
+        <div class="pull-right"><h4><a (click)="isPostServiceRequest = !isPostServiceRequest"> <span class="text-orange cursor">Post Service Request</span></a>
+        </h4></div>
+      </div>
+
+      <div class="col-sm-12 hd-border-orange animated fadeInRightBig" *ngIf="!isPostServiceRequest">
+        <h4 class="text-sky pull-left post-hd-orange">Post Service Request </h4>
+        <div class="pull-right"><h4><a (click)="isPostServiceRequest = !isPostServiceRequest"> <span class="text-sky cursor">Post Service Offering</span></a>
+        </h4></div>
+      </div>
+    </div>
     <div class="service-select row margin">
       <div class="for-group col-sm-3 text-right">
         <label class="label-text">Offered services :</label>

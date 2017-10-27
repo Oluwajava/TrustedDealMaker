@@ -12,18 +12,26 @@ export class AuthService {
   }
 
   login(data, response: (response: boolean) => void) {
-    this.applicationRepository.query({destination: Constants.LOGIN, item: data}, callback => {
-      localStorage.setItem(Constants.CURRENT_USER, callback);
+    if(data.username == "test" && data.password == "test") {
+      localStorage.setItem(Constants.CURRENT_USER, JSON.stringify(data));
       response(true);
-    });
+    }
+
+    response(false);
+
   }
+
 
   logout() {
     localStorage.removeItem(Constants.CURRENT_USER);
+    console.log(this.isLoggedIn());
+    console.log(localStorage.getItem(Constants.CURRENT_USER))
+    this.router.navigateByUrl("login")
   }
 
   isLoggedIn() {
-    if (!!localStorage.getItem(Constants.CURRENT_USER)) {
+    console.log(localStorage.getItem(Constants.CURRENT_USER) != null)
+    if (localStorage.getItem(Constants.CURRENT_USER) != null) {
       return true;
     }
     return false;

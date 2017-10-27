@@ -9,10 +9,15 @@ import {AuthService} from "../service/auth.service";
 export class HeaderComponent implements OnInit {
 
   constructor(public authService: AuthService) {
-
+    console.log(authService.isLoggedIn())
   }
 
   ngOnInit() {
+  }
+
+  logout() {
+    console.log('logout');
+    this.authService.logout();
   }
 
 }

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-active-bids',
@@ -7,10 +8,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ActiveBidsComponent implements OnInit {
 
+  isServiceBuyer;
   settings: any;
   data: any;
 
-  constructor() {
+  constructor(private activatedRoute: ActivatedRoute) {
     this.settings = {
       attr: {
         class: 'datatable'
@@ -67,6 +69,9 @@ export class ActiveBidsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.activatedRoute.queryParams.subscribe((params: Params) => {
+      this.isServiceBuyer = params['q'];
+    });
   }
 
 }

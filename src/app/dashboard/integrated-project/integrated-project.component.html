@@ -155,7 +155,23 @@ Hello Section
   </div>
 
   <div class="container margin" *ngIf="searchData === true">
-    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+    <table datatable class="row-border hover margin">
+      <thead>
+      <tr>
+        <th>Photos</th>
+        <th>Service Provider</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let d of data">
+        <td><img src="{{d.photos}}" width="100" height="100"/></td>
+        <td>{{d.serviceProvider}}</td>
+        <td>{{d.action}}</td>
+      </tr>
+
+      </tbody>
+    </table>
   </div>
 </section><!-- End section-->
 

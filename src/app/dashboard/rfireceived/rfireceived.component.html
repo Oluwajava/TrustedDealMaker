@@ -17,7 +17,25 @@ Hello Section
 
   </section>
   <div class="container margin">
-    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+    <table datatable class="row-border hover margin">
+      <thead>
+      <tr>
+        <th>Buyer Name</th>
+        <th>Title</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let d of data">
+        <td>{{d.buyerName}}</td>
+        <td>{{d.title}}</td>
+        <td>{{d.endDate}}</td>
+        <td>{{d.status}}</td>
+      </tr>
+
+      </tbody>
+    </table>
   </div>
 
 </section><!-- End section-->
